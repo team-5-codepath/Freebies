@@ -14,7 +14,6 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** E-commerce / Social Networking
 - **Mobile:** The primary usage platform for this app would be mobile because users can take a picture, upload it, and display the item they would like to trade. All of this could be done with their mobile device. The functionality could easily extend to a computer, but the mobile device is better suited because notifications will allow transactions to occur at a faster pace.
 - **Story:**  Modern users want to clear up space and declutter. In addition, users want to be able to sift through a catalog of items so that they can find what they want without having to overspend. This interplay allows users to be donors/sellers and consumers on our
@@ -95,8 +94,7 @@ Optional
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="https://github.com/team-5-codepath/Freebies/blob/main/Images/wireframe.png" width=500>
+<img src="https://github.com/team-5-codepath/Freebies/blob/main/Images/wireframe.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
