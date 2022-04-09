@@ -96,7 +96,7 @@ Optional
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/team-5-codepath/Freebies/blob/main/Images/wireframe.png" width=500>
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -105,8 +105,146 @@ Optional
 ## Schema
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+##### Post
+
+| Property    | Type            | Description                           |
+| ----------- | --------------- | ------------------------------------- |
+| objectId    | String          | Unique id for the user post           |
+| Author      | Pointer to User | Author of the post                    |
+| Image       | File            | Image of the item                     |
+| Description | String          | Description of the item               |
+| ItemCount   | Int             | Number of Items that has been posted. |
+| createdAt   | DateTime        | Date when post is created             |
+| updatedAt   | DateTime        | Date when post is last updated        |
+| Contact     | String          | Email of the user                     |
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+
+* Home Feed Screen
+
+  * (Read/GET) Query all posts
+
+  * (Create/POST) Create a new like on a post
+
+  * ```js
+    let like = PFObject(className:"Like")
+    	like["name"] = "liked"
+    
+    	like.findObjectsInBackground { (succeeded, error)  in
+        	if (succeeded) {
+            	print("Successfully saved.")
+        	}
+        	else {
+            print(error.localizedDescription)
+        	}
+    	}
+    
+    ```
+
+  * (Delete) Delete existing like
+
+  * ```js
+    PFObject.removeAll(findObjectsInBackground: Like) { (succeeded, error) in
+        if (succeeded) {
+            print("Successfully deleted.")
+        } else {
+            print(error.localizedDescription)
+        }
+    }
+    
+    ```
+
+* Message View Screen
+
+  * (Read/GET) Query all posts user likes
+
+* Chat View Screen
+
+  * (Update/PUT) Update user comment
+
+  * (Create/POST) Create a new comment on a post
+
+  * ```js
+    let comment = PFObject(className: "Comments")
+       comment["author"] = PFUser.current()!
+       comment["text"] = text
+       comment["post"] = selectedPost
+       selectedPost.add(comment, forKey: "comments")
+    ```
+
+  * ```js
+    selectedPost.findObjectsInBackground { (success, error) in
+           if success{
+               print("Comment saved")
+           }else {
+               print("Error saving comment")
+           }
+       }
+    ```
+
+  * (Delete) Delete existing comment
+
+  * ```js
+    PFObject.removeAll(findObjectsInBackground: Comments) { (succeeded, error) in
+         	if (succeeded) {
+            	print("Successfully deleted.")
+        	} else {
+            print(error.localizedDescription)
+        	}
+    	}
+    ```
+
+* Profile View Screen
+
+  * (Delete) Delete existing post object
+
+  * (Read/GET) Query logged in user object
+
+  * ```js
+    let query = PFQuery(className:"Profile")
+    	query.whereKey("author", equalTo: currentUser)
+    
+    	query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       		if let error = error { 
+          		print(error.localizedDescription)
+       		} 
+       		else if let users = users {
+          		print("Successfully login")
+      		}
+    	}
+    ```
+
+  * (Update/PUT) Update user profile image
+
+  * ```js
+    let query = PFQuery(className:"Profile")
+    	query.getObjectInBackground(withId: "?") { (Profile: PFObject?, error: Error?) in
+    	    if let error = error {
+    	        print(error.localizedDescription)
+    	    } else if let Profile = Profile {
+    	        Profile["image"] = newImage
+    	    }
+    	}
+    ```
+
+* Post View Screen
+
+  * (Create/POST) Create a new post object
+
+  * ```js
+    let Post = PFObject(className:"Post")
+    	Post["name"] = User
+    	Post["text"] = Text
+    	Post.saveInBackground { (succeeded, error)  in
+        if (succeeded) {
+            	print("Successfully Created.")
+        	}
+        	else {
+            print(error.localizedDescription)
+        	}
+    	}
+    ```
+
+    
+
