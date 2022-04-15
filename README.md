@@ -48,7 +48,7 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+<img src='https://github.com/team-5-codepath/Freebies/blob/main/user_story1_progress.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
