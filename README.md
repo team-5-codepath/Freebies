@@ -27,13 +27,13 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 
 **Required Must-have Stories**
 
-* User can sign up to create a new account
-* User can login and logout of his/her account
-* User can take a picture and post it to app 
-* User can view a feed of post 
-* User can leave comments under posts
-* Every posts show up in the timeline
-* User can refresh posts timeline by pulling down to refresh
+  - [x] User can sign up to create a new account 
+  - [ ] User can login and logout of his/her account
+  - [ ] User can take a picture and post it to app
+  - [ ] User can view a feed of post
+  - [ ] User can leave comments under posts
+  - [ ] Every posts show up in the timeline
+  - [ ] User can refresh posts timeline by pulling down to refresh
 
 
 **Optional Nice-to-have Stories**
@@ -43,6 +43,14 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 * User can search for a post
 * User can make a wish list of items
 * User can trade via app
+
+## progress Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ### 2. Screen Archetypes
 
@@ -243,6 +251,8 @@ Optional
         	}
     	}
     ```
+
+
 
     
 
