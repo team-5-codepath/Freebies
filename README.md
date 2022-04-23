@@ -28,7 +28,7 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 **Required Must-have Stories**
 
   - [x] User can sign up to create a new account 
-  - [ ] User can login and logout of his/her account
+  - [x] User can login and logout of his/her account
   - [ ] User can take a picture and post it to app
   - [ ] User can view a feed of post
   - [ ] User can leave comments under posts
@@ -47,6 +47,10 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 ## progress Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
+![Kapture 2022-04-22 at 23 18 00](https://user-images.githubusercontent.com/66290921/164873400-9453c922-c14c-434b-a0e4-5226b4909cd0.gif)
+
+GIF created with [Kap] (https://getkap.co/).
 
 <img src='https://github.com/team-5-codepath/Freebies/blob/main/user_story1_progress.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
