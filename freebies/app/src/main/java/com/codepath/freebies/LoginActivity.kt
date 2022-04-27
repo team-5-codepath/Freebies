@@ -15,6 +15,10 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        if (ParseUser.getCurrentUser() != null) {
+            goToMainActivity()
+        }
+
         findViewById<Button>(R.id.bt_signup).setOnClickListener {
             val username = findViewById<EditText>(R.id.et_username).text.toString()
             val password = findViewById<EditText>(R.id.et_password).text.toString()
@@ -63,6 +67,7 @@ class LoginActivity : AppCompatActivity() {
     private fun goToMainActivity() {
         val intent = Intent(this@LoginActivity, MainActivity::class.java)
         startActivity(intent)
+        finish()
     }
 
     companion object{
