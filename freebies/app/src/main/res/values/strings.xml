@@ -2,12 +2,8 @@
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
     <string name="app_name">Freebies</string>
 
-    <!-- Paste BOTH strings as required
+    <!-- Paste BOTH strings as required -->
     <string name="back4app_app_id">lWIWJMpY6suqKFInSCYxrDGDnFfxF6yuAGM2FFEa</string>
-    <string name="back4app_client_key">eU5fiMX38eHiomjINcwg5LyngpNWpLR5oos1ZmYG</string> -->
-
-    <!-- Delete when Userstory 3 is completed-->
-    <string name="back4app_app_id">XqeyZzH35xFkgmxz9lrD23XssqgYczW5qJXBQB91</string>
-    <string name="back4app_client_key">Jb6cJHAxytdbiknJww9ozzTHYiSKBTKznv55xeq2</string>
+    <string name="back4app_client_key">eU5fiMX38eHiomjINcwg5LyngpNWpLR5oos1ZmYG</string>
 
 </resources>
