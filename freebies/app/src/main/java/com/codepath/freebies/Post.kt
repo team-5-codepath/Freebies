@@ -16,6 +16,14 @@ class Post : ParseObject() {
             put(KEY_DESCRIPTION, description)
         }
 
+        fun getItemName(): String? {
+            return getString(KEY_ITEM)
+        }
+
+        fun setItemName(itemName: String) {
+            put(KEY_ITEM, itemName)
+        }
+
         fun getImage(): ParseFile? {
             return getParseFile(KEY_IMAGE)
         }
@@ -36,5 +44,6 @@ class Post : ParseObject() {
             const val KEY_DESCRIPTION = "description"
             const val KEY_IMAGE = "image"
             const val KEY_USER = "user"
+            const val KEY_ITEM = "itemName"
         }
 }
