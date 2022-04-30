@@ -6,6 +6,8 @@ import com.parse.ParseObject
 import com.parse.ParseUser
 
 @ParseClassName("Post")
+
+
 class Post : ParseObject() {
 
         fun getDescription(): String? {
