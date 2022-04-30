@@ -3,6 +3,9 @@
     <string name="app_name">Freebies</string>
 
     <!-- Paste BOTH strings as required -->
-    <string name="back4app_app_id">lWIWJMpY6suqKFInSCYxrDGDnFfxF6yuAGM2FFEa</string>
-    <string name="back4app_client_key">eU5fiMX38eHiomjINcwg5LyngpNWpLR5oos1ZmYG</string>
+    <string name="back4app_app_id">KULrtoA5mtqqIiYSB9n5QnFHfyh1NOBupt468bte</string>
+    <string name="back4app_client_key">EBqdnKVueIHeLo5lVn8TBVX64PwVDMHmHq1Bwy2U</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

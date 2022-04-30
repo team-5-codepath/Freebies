@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tvPostName"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvImages1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="PostItem" />
+
+    <TextView
+        android:id="@+id/tvGetDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvImages1"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostName"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/tvGetUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvImages1"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tvGetDescription"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:text="User" />
+
+    <ImageView
+        android:id="@+id/tvImages1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
