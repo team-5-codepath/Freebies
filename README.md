@@ -29,11 +29,9 @@ Freebies is a used item sharing app where users can sign up and post pictures of
 
   - [x] User can sign up to create a new account 
   - [x] User can login and logout of his/her account
-  - [ ] User can take a picture and post it to app
-  - [ ] User can view a feed of post
-  - [ ] User can leave comments under posts
-  - [ ] Every posts show up in the timeline
-  - [ ] User can refresh posts timeline by pulling down to refresh
+  - [x] User can take a picture and post it to app
+  - [x] User can view a feed of post
+  - [x] User can leave comments under posts
 
 
 **Optional Nice-to-have Stories**
@@ -53,6 +51,8 @@ Here's a walkthrough of implemented user stories:
 GIF created with [Kap] (https://getkap.co/).
 
 <img src='https://github.com/team-5-codepath/Freebies/blob/main/user_story1_progress.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+
+<img src='https://github.com/team-5-codepath/Freebies/blob/a4ef9d42aaff78b37474dac6df1bb66869109b2f/freebies.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
