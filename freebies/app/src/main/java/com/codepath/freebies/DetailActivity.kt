@@ -33,8 +33,8 @@ class DetailActivity : AppCompatActivity() {
 
         tvPosName.text = post.getItemName()
         tvDescription.text = post.getDescription()
-//        tvUser.text = post.getUser()
-//        Glide.with(itemView.context).load(post.getImage()?.url).into(tvImages)
+        tvUser.text = post.getUser()?.username
+        Glide.with(applicationContext).load(post.getImage()?.url).into(tvImages)
 
     }
 }
